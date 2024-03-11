@@ -1,9 +1,14 @@
 'use strict'
 
+//TODO: IMPLEMENT TEST DRIVEN DEVELOPMENT
+
 const http = require('http');
 const express = require('express');
 const port = process.env.PORT || 3000;
 const app = express();
+
+// implement ejs
+app.set('view engine', 'ejs');
 
 // serve static assets middleware
 app.use(express.static(__dirname + '/dist'));
