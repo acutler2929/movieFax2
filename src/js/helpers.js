@@ -7,6 +7,6 @@ const timeout = function(sec) {
 }
 
 export const APIHandler = async function(url) {
-        const response = await axios.get(url);
-       return response;
+    const response = await axios.get(url);
+    return response;
 }
