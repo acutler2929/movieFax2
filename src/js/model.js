@@ -1,9 +1,9 @@
 'use strict'
 
-const imdbAPIKey = process.env.IMDB_API_KEY;
-const watchModeAPIKey = process.env.WATCHMODE_API_KEY;
-const searchUrl = process.env.IMDB_SEARCH_MOVIE_URL;
-const movieUrl = process.env.IMDB_SELECTED_MOVIE_DATA_URL;
+import * as config from './config.js'
+
+const searchUrl = config.IMDB_SEARCH_MOVIE_URL;
+const movieUrl = config.IMDB_SELECTED_MOVIE_DATA_URL;
 
 export const state = {
     movie: {},

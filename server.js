@@ -8,6 +8,9 @@ const port = process.env.PORT || 3000;
 const app = express();
 // const ejs = require('ejs');
 
+const imdbAPIKey = process.env.IMDB_API_KEY;
+const watchModeAPIKey = process.env.WATCHMODE_API_KEY;
+
 // implement ejs
 // app.set('view engine', 'ejs');
 
