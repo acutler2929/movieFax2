@@ -15,4 +15,10 @@ const controlLogin = {}
 
 const controlSignup = {}
 
-console.log("Hello from controller.js!!!");
+
+//assigning event listeners to buttons...
+const clickMe = document.getElementById('click-me');
+
+clickMe.addEventListener('click',  function() {
+    console.log("Hello from controller.js!!!");
+});
