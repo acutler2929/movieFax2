@@ -7,18 +7,40 @@ import signUpView from './views/signUpView.js';
 import searchResultsView from './views/searchResultsView.js';
 import movieInfoView from './views/movieInfoView.js';
 
-const controlMovies = {}
+// const controlMovies = function () {
+//     try {
+//         //do stuff
+//     } catch (err) {
+//         console.error(err);
+//     }
+// };
 
-const controlSearchResults = {}
+// const controlSearchResults = function () {
+//     try {
+//         //do stuff
+//     } catch (err) {
+//         console.error(err);
+//     }
+// };
 
-const controlLogin = {}
+export const testMovie = () => {
+    return model.loadMovieTest();
+}
 
-const controlSignup = {}
+// const controlLogin = function () {
+//     try {
+//         //do stuff
+//     } catch (err) {
+//         console.error(err);
+//     }
+// };
+
+// const controlSignup = function () {
+//     try {
+//         //do stuff
+//     } catch (err) {
+//         console.error(err);
+//     }
+// };
 
 
-//assigning event listeners to buttons...
-const clickMe = document.getElementById('click-me');
-
-clickMe.addEventListener('click',  function() {
-    console.log("Hello from controller.js!!!");
-});

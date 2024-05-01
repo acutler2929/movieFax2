@@ -1,5 +1,7 @@
 'use strict'
 
+import * as controller from '../controller.js';
+
 export default class View {
     render(data) {
         if(!data || (Array.isArray(data) && data.length == 0))
@@ -30,3 +32,14 @@ export default class View {
         `;
     }
 };
+
+//assigning event listeners to buttons...
+const clickMe = document.getElementById('click-me');
+
+clickMe.addEventListener('click',  function() {
+    console.log("View.js: Grabbing test data from model...");
+
+    let response = controller.testMovie();
+
+    console.log(`...and here it is:\n${response}`);
+});

@@ -1,0 +1,17 @@
+{
+    "data": {
+      "title": {
+        "titleText": {
+          "text": "The Matrix"
+        },
+        "ratingsSummary": {
+          "aggregateRating": 8.7,
+          "voteCount": 1900035
+        }
+      }
+    },
+    "extensions": {
+      "disclaimer": "This is test data."
+    }
+  }
+  
