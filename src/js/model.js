@@ -49,17 +49,14 @@ export const loadSearchTest = () => {
 }
 
 export const loadMovieTest = async () => {
-    await fetch('./testData.json')
+    return fetch('./testData.json')
         .then((response) => response.json())
-        // .then((response) => console.log(response))
         .then((response) => {
-            movieData = response;
-            console.log(`model.js: here is movie data:\n${movieData}`);
-            return movieData;
+            // movieData = response;
+            // console.log('model.js: here is movie data:\n', movieData);
+            return response;
         });
     
-    return movieData;
-
     // const response = await fetch('./testData.json');
     // movieData = await response.json();
     // console.log(`model.js: here is movieData:\n${movieData}`);
