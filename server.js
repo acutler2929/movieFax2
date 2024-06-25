@@ -8,7 +8,6 @@ const port = process.env.PORT || 3000;
 const app = express();
 // const ejs = require('ejs');
 
-const imdbAPIKey = process.env.IMDB_API_KEY;
 const watchModeAPIKey = process.env.WATCHMODE_API_KEY;
 
 // implement ejs
@@ -17,15 +16,30 @@ const watchModeAPIKey = process.env.WATCHMODE_API_KEY;
 // serve static assets middleware
 app.use(express.static(__dirname));
 
+// serve the application
 app.get('/', (req, res) => {
     res.sendFile('index.html', {root: __dirname});
 });
 
-// http.createServer(app).listen(port);
+// get search data
+app.get('/search', async (req, res) => {
+    let apiData;
 
-// var server = http.createServer(function(req, res) {
-    //     res.end(ejs.render('HELLO!!'));
-    // });
-    
+    let url = `https://api.watchmode.com/v1/title/345534/details/?apiKey=${watchModeAPIKey}`;
+
+    apiData = await fetch(url, { method: 'Get' })
+        .then((res) => res.json())
+        .then((json) => {
+            console.log(json);
+        });
+
+    // res.send(apiData);
+})
+
+// get title data
+app.get('/title', (req, res) => {
+
+})
+
 console.log(`movieFax running on port ${port}`);
 app.listen(port);

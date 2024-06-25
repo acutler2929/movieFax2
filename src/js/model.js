@@ -40,8 +40,7 @@ export const loadSearchResults = () => {
 };
 
 export const loadMovieInfo = () => {
-    // perhaps an async function with regenerator runtime?
-    // maybe send and AJAX call to the server file?
+    //use fetch get request to Watchmode, send to server for api key
 };
 
 export const loadSearchTest = () => {

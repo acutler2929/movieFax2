@@ -27,6 +27,10 @@ export const testMovie = () => {
     return model.loadMovieTest();
 }
 
+export const movieInfo = () => {
+    return model.loadMovieInfo();
+}
+
 // const controlLogin = function () {
 //     try {
 //         //do stuff

@@ -29,20 +29,70 @@ const generateMarkup = (object) => {
     <p>Rating: ${RATING}</p>
     `;
 }
+const getSearchTest = async () => {
+    // //first, we clear previous data from the movie info container:
+    // (function clearInfoContainer() {
+    //     movieContainer.innerHTML = '';
+    // })();
 
-//assigning event listeners to buttons...
-const clickMe = document.getElementById('click-me');
-const movieContainer = document.getElementById('movie-info-container');
+    // // grab test data from the model through the controller
+    // let response = await controller.testMovie();
+    
+    // // OR grab data from WatchMode API...
+    
+    // // insert the returned model data into markup
+    // let markup = generateMarkup(response);
+    // movieContainer.insertAdjacentHTML('afterbegin', markup);
+}
 
-clickMe.addEventListener('click', async function() {
-    // console.log("view.js: Grabbing test data from model...");
+const getDataTest = async () => {
+    //first, we clear previous data from the movie info container:
+    (function clearInfoContainer() {
+        movieContainer.innerHTML = '';
+    })();
 
+    // grab test data from the model through the controller
     let response = await controller.testMovie();
-
-    // console.log(`...and here it is:\n${JSON.stringify(response)}`);
-
+    
+    // OR grab data from WatchMode API...
+    
+    // insert the returned model data into markup
     let markup = generateMarkup(response);
     movieContainer.insertAdjacentHTML('afterbegin', markup);
+}
+
+const getAPITest = async () => {
+    //first, we clear previous data from the movie info container:
+    (function clearInfoContainer() {
+        movieContainer.innerHTML = '';
+    })();
+
+    // grab test data from the model through the controller
+    let response = await controller.movieInfo();
+    
+    // OR grab data from WatchMode API...
+    
+    // insert the returned model data into markup
+    let markup = generateMarkup(response);
+    movieContainer.insertAdjacentHTML('afterbegin', markup);
+}
+
+//////////////// assigning event listeners and functions to buttons...
+const testSearch = document.getElementById('click-search');
+const testData = document.getElementById('click-data');
+const movieInfo = document.getElementById('click-api');
+const movieContainer = document.getElementById('movie-info');
+
+testSearch.addEventListener('click', async function() {
+    getSearchTest();  
+});
+
+testData.addEventListener('click', async function() {
+    getDataTest();  
+});
+
+movieInfo.addEventListener('click', async function() {
+    getAPITest();  
 });
 
 export default new MovieInfoView();
