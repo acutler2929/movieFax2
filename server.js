@@ -42,12 +42,11 @@ app.get('/title', (req, res) => {
 
 })
 
-////////////// TEST THIS FINALLY WORKS!!!
 // const fs = require('fs');
 
 // // const searchurl = `https://api.watchmode.com/v1/search/?apiKey=${watchModeAPIKey}&search_field=name&search_value=Star%20Wars`;
 // // const titleurl = `https://api.watchmode.com/v1/title/1359293/details/?apiKey=${watchModeAPIKey}`;
-// const sourcesurl = `https://api.watchmode.com/v1/title/1359293/details/?apiKey=${watchModeAPIKey}`;
+// const sourcesurl = `https://api.watchmode.com/v1/title/1359293/sources/?apiKey=${watchModeAPIKey}`;
 
 
 // fetch(sourcesurl, { method: 'Get' })

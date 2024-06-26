@@ -24,7 +24,7 @@ import movieInfoView from './views/movieInfoView.js';
 // };
 
 export const titleSearch = () => {
-    return model.loadMovieTest();
+    return model.loadTitleSearch();
 }
 
 export const movieInfo = () => {
