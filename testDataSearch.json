@@ -1,0 +1,355 @@
+{
+    "title_results": [
+        {
+            "resultType": "title",
+            "id": 1359294,
+            "name": "Star Wars: The Rise of Skywalker",
+            "type": "movie",
+            "year": 2019,
+            "imdb_id": "tt2527338",
+            "tmdb_id": 181812,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1359310,
+            "name": "Star Wars: The Last Jedi",
+            "type": "movie",
+            "year": 2017,
+            "imdb_id": "tt2527336",
+            "tmdb_id": 181808,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1359306,
+            "name": "Star Wars: The Force Awakens",
+            "type": "movie",
+            "year": 2015,
+            "imdb_id": "tt2488496",
+            "tmdb_id": 140607,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 3185896,
+            "name": "Star Wars: Tales of the Jedi",
+            "type": "tv_miniseries",
+            "year": 2022,
+            "imdb_id": "tt20723374",
+            "tmdb_id": 203085,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 3179581,
+            "name": "Star Wars: The Bad Batch",
+            "type": "tv_series",
+            "year": 2021,
+            "imdb_id": "tt12708542",
+            "tmdb_id": 105971,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 1359292,
+            "name": "Star Wars: Episode III - Revenge of the Sith",
+            "type": "movie",
+            "year": 2005,
+            "imdb_id": "tt0121766",
+            "tmdb_id": 1895,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1359291,
+            "name": "Star Wars: Episode II - Attack of the Clones",
+            "type": "movie",
+            "year": 2002,
+            "imdb_id": "tt0121765",
+            "tmdb_id": 1894,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 3223062,
+            "name": "Star Wars: Tales of the Empire",
+            "type": "tv_miniseries",
+            "year": 2024,
+            "imdb_id": "tt32019314",
+            "tmdb_id": 251091,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 1359290,
+            "name": "Star Wars: Episode I - The Phantom Menace",
+            "type": "movie",
+            "year": 1999,
+            "imdb_id": "tt0120915",
+            "tmdb_id": 1893,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1359293,
+            "name": "Star Wars",
+            "type": "movie",
+            "year": 1977,
+            "imdb_id": "tt0076759",
+            "tmdb_id": 11,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1359303,
+            "name": "Star Wars: The Clone Wars",
+            "type": "movie",
+            "year": 2008,
+            "imdb_id": "tt1185834",
+            "tmdb_id": 12180,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 3111478,
+            "name": "Star Wars: The Clone Wars",
+            "type": "tv_series",
+            "year": 2008,
+            "imdb_id": "tt0458290",
+            "tmdb_id": 4194,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 3111472,
+            "name": "Star Wars: Rebels",
+            "type": "tv_series",
+            "year": 2014,
+            "imdb_id": "tt2930604",
+            "tmdb_id": 60554,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 3172978,
+            "name": "Star Wars: Clone Wars",
+            "type": "tv_series",
+            "year": 2003,
+            "imdb_id": "tt0361243",
+            "tmdb_id": 3122,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 1673154,
+            "name": "Star Wars Rebels: The Siege of Lothal",
+            "type": "movie",
+            "year": 2015,
+            "imdb_id": "tt4236890",
+            "tmdb_id": 337755,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1672791,
+            "name": "Star Wars Rebels: Spark of Rebellion",
+            "type": "movie",
+            "year": 2014,
+            "imdb_id": "tt3816564",
+            "tmdb_id": 287663,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 4110272,
+            "name": "The Star Wars Holiday Special",
+            "type": "tv_movie",
+            "year": 1978,
+            "imdb_id": "tt0193524",
+            "tmdb_id": 74849,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 3111473,
+            "name": "Star Wars: Resistance",
+            "type": "tv_series",
+            "year": 2018,
+            "imdb_id": "tt8336340",
+            "tmdb_id": 79093,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 3175846,
+            "name": "Star Wars: Visions",
+            "type": "tv_series",
+            "year": 2021,
+            "imdb_id": "tt13622982",
+            "tmdb_id": 114478,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 1673497,
+            "name": "Star Wars Rebels: Steps Into Shadow",
+            "type": "movie",
+            "year": 2016,
+            "imdb_id": "tt5654976",
+            "tmdb_id": 418363,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 2715395,
+            "name": "Star Wars Biomes",
+            "type": "short_film",
+            "year": 2021,
+            "imdb_id": "tt14578676",
+            "tmdb_id": 825647,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1781163,
+            "name": "Star Wars: The Clone Wars",
+            "type": "movie",
+            "year": null,
+            "imdb_id": "tt9313978",
+            "tmdb_id": 1230608,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 496230,
+            "name": "Star Wars: The Legacy Revealed",
+            "type": "tv_movie",
+            "year": 2007,
+            "imdb_id": "tt1039988",
+            "tmdb_id": 128295,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 3111471,
+            "name": "Star Wars: Forces of Destiny",
+            "type": "tv_series",
+            "year": 2017,
+            "imdb_id": "tt6779076",
+            "tmdb_id": 71412,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 1707357,
+            "name": "Star Wars Jedi: Fallen Order",
+            "type": "movie",
+            "year": null,
+            "imdb_id": "tt5691474",
+            "tmdb_id": 1122211,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 1666059,
+            "name": "Star Wars: A Musical Journey",
+            "type": "movie",
+            "year": 2005,
+            "imdb_id": "tt0459164",
+            "tmdb_id": 72448,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 3188070,
+            "name": "Star Wars: Ewoks",
+            "type": "tv_series",
+            "year": 1985,
+            "imdb_id": "tt0088515",
+            "tmdb_id": 3478,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 3111476,
+            "name": "Star Wars: Droids",
+            "type": "tv_series",
+            "year": 1985,
+            "imdb_id": "tt0088510",
+            "tmdb_id": 25,
+            "tmdb_type": "tv"
+        },
+        {
+            "resultType": "title",
+            "id": 1666231,
+            "name": "Star Wars: Within a Minute - The Making of Episode III",
+            "type": "movie",
+            "year": 2005,
+            "imdb_id": "tt0491707",
+            "tmdb_id": 72513,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 4129619,
+            "name": "Star Wars: Greatest Moments",
+            "type": "tv_movie",
+            "year": 2015,
+            "imdb_id": "tt5312326",
+            "tmdb_id": 378386,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 4146443,
+            "name": "Star Wars: Evolution of the Lightsaber Duel",
+            "type": "tv_movie",
+            "year": 2015,
+            "imdb_id": "tt6289242",
+            "tmdb_id": 376798,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 4148631,
+            "name": "Star Wars: The Magic & the Mystery",
+            "type": "tv_movie",
+            "year": 1997,
+            "imdb_id": "tt0477094",
+            "tmdb_id": 485997,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 2757657,
+            "name": "Star Wars: Origins",
+            "type": "short_film",
+            "year": 2019,
+            "imdb_id": "tt7668272",
+            "tmdb_id": 1091104,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 539253,
+            "name": "Star Wars Galaxy's Edge: Adventure Awaits",
+            "type": "tv_movie",
+            "year": 2019,
+            "imdb_id": "tt10951528",
+            "tmdb_id": 624371,
+            "tmdb_type": "movie"
+        },
+        {
+            "resultType": "title",
+            "id": 2751855,
+            "name": "Star Wars: Dresca",
+            "type": "short_film",
+            "year": 2018,
+            "imdb_id": "tt8231960",
+            "tmdb_id": 1054209,
+            "tmdb_type": "movie"
+        }
+    ],
+    "people_results": []
+}

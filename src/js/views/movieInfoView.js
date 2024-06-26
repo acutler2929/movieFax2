@@ -21,6 +21,9 @@ class MovieInfoView extends View{
 };
 
 const generateMarkup = (object) => {
+    //TODO: TWEAK THIS TO USE WATCHMODE JSON DATA
+
+    console.log(object);
     const TITLE = object.data.title.titleText.text;
     const RATING = object.data.title.ratingsSummary.aggregateRating;
 
@@ -45,14 +48,16 @@ const getSearchTest = async () => {
     // movieContainer.insertAdjacentHTML('afterbegin', markup);
 }
 
-const getDataTest = async () => {
+const getTitleSearch = async () => {
+    //TODO: COMBINE GETTITLESEARCH AND GETMOVIEINFO
+
     //first, we clear previous data from the movie info container:
     (function clearInfoContainer() {
         movieContainer.innerHTML = '';
     })();
 
     // grab test data from the model through the controller
-    let response = await controller.testMovie();
+    let response = await controller.titleSearch();
     
     // OR grab data from WatchMode API...
     
@@ -61,14 +66,16 @@ const getDataTest = async () => {
     movieContainer.insertAdjacentHTML('afterbegin', markup);
 }
 
-const getAPITest = async () => {
+const getMovieInfo = async () => {
+    //TODO: COMBINE GETTITLESEARCH AND GETMOVIEINFO
+
     //first, we clear previous data from the movie info container:
     (function clearInfoContainer() {
         movieContainer.innerHTML = '';
     })();
 
     // grab test data from the model through the controller
-    let response = await controller.movieInfo();
+    let response = controller.movieInfo();
     
     // OR grab data from WatchMode API...
     
@@ -76,6 +83,23 @@ const getAPITest = async () => {
     let markup = generateMarkup(response);
     movieContainer.insertAdjacentHTML('afterbegin', markup);
 }
+
+const getMovieSources = async () => {
+    //first, we clear previous data from the movie info container:
+    (function clearInfoContainer() {
+        movieContainer.innerHTML = '';
+    })();
+
+    // grab test data from the model through the controller
+    let response = controller.movieSources();
+    
+    // OR grab data from WatchMode API...
+    
+    // insert the returned model data into markup
+    let markup = generateMarkup(response);
+    movieContainer.insertAdjacentHTML('afterbegin', markup);
+}
+
 
 //////////////// assigning event listeners and functions to buttons...
 const testSearch = document.getElementById('click-search');

@@ -23,12 +23,16 @@ import movieInfoView from './views/movieInfoView.js';
 //     }
 // };
 
-export const testMovie = () => {
+export const titleSearch = () => {
     return model.loadMovieTest();
 }
 
 export const movieInfo = () => {
     return model.loadMovieInfo();
+}
+
+export const movieSources = () => {
+    return model.loadSourcesInfo();
 }
 
 // const controlLogin = function () {

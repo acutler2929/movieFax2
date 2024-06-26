@@ -34,7 +34,7 @@ export const state = {
 //     };
 // };
 
-export const loadSearchResults = () => {
+export const loadTitleSearch = () => {
     // perhaps an async function with regenerator runtime?
     // maybe send an AJAX call to the server file?
 };
@@ -43,8 +43,16 @@ export const loadMovieInfo = () => {
     //use fetch get request to Watchmode, send to server for api key
 };
 
-export const loadSearchTest = () => {
+export const loadSourcesInfo = () => {
+    // load sources from Watchmode
+}
 
+export const loadSearchTest = () => {
+    fetch('/search', { method: 'GET' })
+        .then((res) => res.json())
+        .then((json) => {
+            console.log(json);
+        });
 }
 
 export const loadMovieTest = async () => {
