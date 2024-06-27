@@ -20,22 +20,9 @@ class MovieInfoView extends View{
     }
 };
 
-const generateTitleMarkup = (json) => {
-    //TODO: TWEAK THIS TO USE WATCHMODE JSON DATA
 
-    console.log(json);
-    const TITLE = json.title_results[9].name;
-    const YEAR = json.title_results[9].year;
-
-    return `
-    <h3>${TITLE}</h3>
-    <p>Year: ${YEAR}</p>
-    `;
-}
 
 const generateInfoMarkup = (json) => {
-    //TODO: TWEAK THIS TO USE WATCHMODE JSON DATA
-
     console.log(json);
     const TITLE = json.title;
     const YEAR = json.year;
@@ -51,8 +38,6 @@ const generateInfoMarkup = (json) => {
 }
 
 const generateSourcesMarkup = (json) => {
-    //TODO: TWEAK THIS TO USE WATCHMODE JSON DATA
-
     console.log(json);
     const NAME = json[0].name;
     const FORMAT = json[0].format;
@@ -65,34 +50,14 @@ const generateSourcesMarkup = (json) => {
     `;
 }
 
-const getTitleSearch = async () => {
-    //TODO: COMBINE GETTITLESEARCH AND GETMOVIEINFO
-
-    //first, we clear previous data from the movie info container:
-    (function clearInfoContainer() {
-        movieContainer.innerHTML = '';
-    })();
-
-    // grab test data from the model through the controller
-    let response = await controller.titleSearch();
-    
-    // OR grab data from WatchMode API...
-    
-    // insert the returned model data into markup
-    let markup = generateTitleMarkup(response);
-    movieContainer.insertAdjacentHTML('afterbegin', markup);
-}
-
 const getMovieInfo = async () => {
-    //TODO: COMBINE GETTITLESEARCH AND GETMOVIEINFO
-
     //first, we clear previous data from the movie info container:
     (function clearInfoContainer() {
         movieContainer.innerHTML = '';
     })();
 
     // grab test data from the model through the controller
-    let response = controller.movieInfo();
+    let response = await controller.movieInfo();
     
     // OR grab data from WatchMode API...
     
@@ -108,7 +73,7 @@ const getMovieSources = async () => {
     })();
 
     // grab test data from the model through the controller
-    let response = controller.movieSources();
+    let response = await controller.movieSources();
     
     // OR grab data from WatchMode API...
     
@@ -119,14 +84,9 @@ const getMovieSources = async () => {
 
 
 //////////////// assigning event listeners and functions to buttons...
-const testSearch = document.getElementById('test-search');
 const testData = document.getElementById('test-info');
 const movieInfo = document.getElementById('test-sources');
 const movieContainer = document.getElementById('movie-info');
-
-testSearch.addEventListener('click', async function() {
-    getTitleSearch();
-});
 
 testData.addEventListener('click', async function() {
     getMovieInfo();
