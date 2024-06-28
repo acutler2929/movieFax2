@@ -45,7 +45,7 @@ export const loadTitleSearch = () => {
 };
 
 // TODO: SEND TO SERVER AND CALL WATCHMODE API
-export const loadMovieInfo = () => {
+const loadMovieInfo = () => {
     // loads test data for now...
     return fetch('./testDataDetails.json')
         .then((response) => response.json())
@@ -55,11 +55,26 @@ export const loadMovieInfo = () => {
 };
 
 // TODO: SEND TO SERVER AND CALL WATCHMODE API
-export const loadSourcesInfo = () => {
+const loadSourcesInfo = () => {
     // loads test data for now...
     return fetch('./testDataSources.json')
         .then((response) => response.json())
         .then((response) => {
             return response;
         });
+}
+
+// Combine movie details and sources data, to send to controller
+export const prepareMovieData = () => {
+    let movieData = {};
+
+    let movieDetails = loadMovieInfo();
+    let sourcesData = loadSourcesInfo();
+
+    movieData = {
+        movieDetails: movieDetails,
+        sourcesData: sourcesData,
+    };
+
+    return movieData;
 }

@@ -23,7 +23,7 @@ class MovieInfoView extends View{
 
 
 const generateInfoMarkup = (json) => {
-    console.log(json);
+    // console.log(json);
     const TITLE = json.title;
     const YEAR = json.year;
     const SCORE = json.critic_score;
@@ -38,7 +38,7 @@ const generateInfoMarkup = (json) => {
 }
 
 const generateSourcesMarkup = (json) => {
-    console.log(json);
+    // console.log(json);
     const NAME = json[0].name;
     const FORMAT = json[0].format;
     const PRICE = json[0].price;
@@ -50,35 +50,35 @@ const generateSourcesMarkup = (json) => {
     `;
 }
 
-const getMovieInfo = async () => {
+export const getMovieInfo = async (movieData) => {
     //first, we clear previous data from the movie info container:
-    (function clearInfoContainer() {
-        movieContainer.innerHTML = '';
-    })();
+    // (function clearInfoContainer() {
+    //     movieContainer.innerHTML = '';
+    // })();
 
     // grab test data from the model through the controller
-    let response = await controller.movieInfo();
+    // let movieData = await controller.movieInfo();
     
     // OR grab data from WatchMode API...
     
     // insert the returned model data into markup
-    let markup = generateInfoMarkup(response);
+    let markup = generateInfoMarkup(movieData);
     movieContainer.insertAdjacentHTML('afterbegin', markup);
 }
 
-const getMovieSources = async () => {
+export const getMovieSources = async (sourcesData) => {
     //first, we clear previous data from the movie info container:
-    (function clearInfoContainer() {
-        movieContainer.innerHTML = '';
-    })();
+    // (function clearInfoContainer() {
+    //     movieContainer.innerHTML = '';
+    // })();
 
     // grab test data from the model through the controller
-    let response = await controller.movieSources();
+    // let sourcesData = await controller.movieSources();
     
     // OR grab data from WatchMode API...
     
     // insert the returned model data into markup
-    let markup = generateSourcesMarkup(response);
+    let markup = generateSourcesMarkup(sourcesData);
     movieContainer.insertAdjacentHTML('afterbegin', markup);
 }
 
@@ -88,12 +88,12 @@ const testData = document.getElementById('test-info');
 const movieInfo = document.getElementById('test-sources');
 const movieContainer = document.getElementById('movie-info');
 
-testData.addEventListener('click', async function() {
-    getMovieInfo();
-});
+// testData.addEventListener('click', async function() {
+//     getMovieInfo();
+// });
 
-movieInfo.addEventListener('click', async function() {
-    getMovieSources();
-});
+// movieInfo.addEventListener('click', async function() {
+//     getMovieSources();
+// });
 
-export default new MovieInfoView();
+// export default new MovieInfoView();

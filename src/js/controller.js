@@ -5,7 +5,7 @@ import introView from './views/introView.js';
 import loginView from './views/loginView.js';
 import signUpView from './views/signUpView.js';
 import searchResultsView from './views/searchResultsView.js';
-import movieInfoView from './views/movieInfoView.js';
+import * as movieInfoView from './views/movieInfoView.js';
 
 // const controlMovies = function () {
 //     try {
@@ -27,13 +27,26 @@ export const titleSearch = () => {
     return model.loadTitleSearch();
 }
 
-export const movieInfo = () => {
-    return model.loadMovieInfo();
+export const searchMovieData = () => {
+    let movieData = {};
+    let sources = {};
+    let details = {};
+
+    movieData = model.prepareMovieData();
+    details = movieData.movieDetails;
+    sources = movieData.sourcesData;
+
+    movieInfoView.getMovieInfo(details);
+    movieInfoView.getMovieSources(sources);
 }
 
-export const movieSources = () => {
-    return model.loadSourcesInfo();
-}
+// export const movieInfo = () => {
+//     return model.loadMovieInfo();
+// }
+
+// export const movieSources = () => {
+//     return model.loadSourcesInfo();
+// }
 
 // const controlLogin = function () {
 //     try {

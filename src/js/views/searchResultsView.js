@@ -17,19 +17,22 @@ class SearchResultsView extends View{
 
 
 const generateTitleMarkup = (json) => {    
-    console.log(json);
+    // console.log(json);
     const TITLE = json.name;
     const YEAR = json.year;
+    const WATCHMODE_ID = json.id;
     
     return `
         <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page">
+          <span class="nav-link active" id="movie-title" style="cursor:pointer" aria-current="page">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#movie1"></use></svg>
             ${TITLE}, ${YEAR}
-          </a>
+          </span>
         </li>
     `;
 }
+
+const hello = () => {console.log("Hello!")};
 
 const getTitleSearch = async () => {
     //first, we clear previous data from the movie info container:
@@ -38,6 +41,7 @@ const getTitleSearch = async () => {
     })();
 
     // grab test data from the model through the controller
+    // TODO: CAN'T ACCESS TITLESEARCH BEFORE INITIALIZATION
     let titleData = await controller.titleSearch();
     
     // OR grab data from WatchMode API...
@@ -53,9 +57,12 @@ const getTitleSearch = async () => {
 ///////////////////// adding event listeners to search
 const searchButton = document.getElementById('search-button');
 const searchList = document.getElementById('search-list');
+const movieTitle = document.getElementById('movie-title');
 
 searchButton.addEventListener('click', async function() {
     getTitleSearch();
 });
+
+movieTitle.addEventListener('click', hello());
 
 export default new SearchResultsView();
