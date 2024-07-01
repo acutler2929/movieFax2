@@ -59,7 +59,7 @@ const searchButton = document.getElementById('search-button');
 const searchList = document.getElementById('search-list');
 const movieTitle = document.getElementById('movie-title');
 
-searchButton.addEventListener('click', async function() {
+searchButton.addEventListener('click', function() {
     getTitleSearch();
 });
 
