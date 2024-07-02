@@ -40,14 +40,6 @@ export const searchMovieData = () => {
     movieInfoView.getMovieSources(sources);
 }
 
-// export const movieInfo = () => {
-//     return model.loadMovieInfo();
-// }
-
-// export const movieSources = () => {
-//     return model.loadSourcesInfo();
-// }
-
 // const controlLogin = function () {
 //     try {
 //         //do stuff
@@ -64,4 +56,20 @@ export const searchMovieData = () => {
 //     }
 // };
 
+const init = () => {
+    
+    const titleSearch = (event) => {
+        console.log(event)
+        let element = event.target;
 
+        // TODO: maybe use parentElement???
+        if(element.tagName == 'BUTTON' && element.id == 'search-button'){
+            console.log("You clicked search!");
+        }
+    }
+
+    // assign event handlers
+    document.addEventListener('click', titleSearch);
+}
+
+init();
